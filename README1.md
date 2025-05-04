@@ -14,12 +14,12 @@ docker run -it --rm --name n8n \
 ```bash
 ngrok http --url=snipe-related-possibly.ngrok-free.app 5678
 ```
-# Set up webhook url for telegram bot
+# Set up webhook URL for the telegram bot
 ```bash
 curl -X POST "https://api.telegram.org/bot7591294808:AAFq9JdwisF46s8gZYp-oMAFLQu41Tksyy0/setWebhook" \
      -d "url=https://snipe-related-possibly.ngrok-free.app/webhook-test/1400e110-bcce-4de7-9c6f-9d74479b12c3/webhook"
 ```
-# Run simulate service
+# Run the simulate service
 ```bash
 python voffice_service.py
 python sapp_service.py
